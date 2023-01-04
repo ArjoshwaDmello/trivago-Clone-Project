@@ -1,0 +1,126 @@
+*{
+        background-color: #fff;
+}
+#car_root{
+    width: 80%;
+    margin: auto;
+}
+#drop_section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#drop_section select{
+    padding: 7px;
+    margin: 0px 10px;
+    border-width: thin;
+    border: none;
+}
+
+#input_from{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+    margin: auto;
+    justify-content: space-around;
+}
+
+#input_from input{
+    margin: 5px 0px;
+    padding: 7px;
+    width: 26%;
+    margin: auto;
+    border-width: thin;
+    border: 2px solid rgb(131, 131, 20);
+}
+#input_from div {
+    margin: 5px 0px;
+    padding: 7px;
+    width: 3%;
+    margin: auto;
+    border-width: thin;
+    border: 2px solid rgb(131, 131, 20);
+}
+#search{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background: #428500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50px; */
+}
+#search i{
+    background: #428500;
+        color: #fff;
+}
+#search:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#upper{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+#upper>div{
+    width: 46%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* border: 2px solid yellow; */
+}
+.cartypes{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.cartypes > div{
+    width: 21%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartypes >div>img{
+    margin-top: 3px;
+    width: 55px;
+    height: 55px;
+}
+
+.cartypes >div>img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.heading{
+    font-weight: bold;
+    text-align: justify;
+}
+
+#Supplier,#Policies{
+    padding: 10px;
+    margin: 25px 0px;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 0px) and (max-width: 765px){
+    #input_from{
+        flex-direction: column;
+    }
+    #input_from input {
+            width: 50%;
+            margin: 10px;
+        }
+    #input_from div{
+        width: 50%;
+        margin: 10px;
+    }
+}
