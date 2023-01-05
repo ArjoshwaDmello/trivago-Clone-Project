@@ -227,5 +227,7 @@ h3 {
 }
 .stops{
     display: flex;
-    justify-content: space-between;
+    align-items: unset;
+    gap: 42px;
 }
+    

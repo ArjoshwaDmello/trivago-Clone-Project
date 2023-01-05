@@ -9,17 +9,19 @@ function closeNav() {
 // console.log(data.end1)
 
 //Main
+let alldata;
 async function load() {
     let res = await fetch("http://localhost:3000/posts");
     let data = await res.json();
-    console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0].FlightDetails[0].OriginAirportName);
+    // console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0].FlightDetails[0].OriginAirportName);
+    alldata=data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items;
     appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
     // appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items)
 }
 function appendData(dataarr) {
     // console.log()
     let container = document.getElementById("parent");
-    container.textContent = "";
+    container.innerHTML = "";
     dataarr.forEach((ele, index) => {
         let div = document.createElement("div");
         let div0=document.createElement("div");
@@ -63,11 +65,8 @@ function appendData(dataarr) {
         let Destination = document.createElement("p");
         Destination.innerText = ele.FlightDetails[0].Destination;
 
-        let ArrivalDateTime=document.createElement("h4");//2:00//4:00=4:00-2:00=2:00
+        let ArrivalDateTime=document.createElement("h4");
         ArrivalDateTime.innerText= ele.FlightDetails[0].ArrivalDateTime;
-
-
-        // var arr1=input[1].trim().split(" ").map((e)=>e.split(':').join("")).map(Number);
 
          let x=(ele.FlightDetails[0].ArrivalDateTime);
           
@@ -143,8 +142,31 @@ function appendData(dataarr) {
 }
 load();
 
-function sortbyprice(){
-  console.log(10);
+//Sort By filter low to high //chepest
+document.getElementById("sortbyprice1btn").addEventListener("click",function(){
+    sortbyprice(alldata);
+});
+function sortbyprice(alldata){
+// ele.FareDescription.PaxFareDetails[0].BasicAmount
+   alldata=alldata.sort((a,b)=>{
+    // console.log(a.FareDescription.PaxFareDetails[0].BasicAmount);
+     return Number(a.FareDescription.PaxFareDetails[0].BasicAmount)-Number(b.FareDescription.PaxFareDetails[0].BasicAmount);
+});
+appendData(alldata);
+}
+//Sort By filter High to Low //Quickset
+document.getElementById("sortbyprice2btn").addEventListener("click",function(){
+    sortbyprice2(alldata);
+});
+function sortbyprice2(alldata){
+// ele.FareDescription.PaxFareDetails[0].BasicAmount
+   alldata=alldata.sort((a,b)=>{
+    // console.log(a.FareDescription.PaxFareDetails[0].BasicAmount);
+     return Number(b.FareDescription.PaxFareDetails[0].BasicAmount)-Number(a.FareDescription.PaxFareDetails[0].BasicAmount);
+});
+// console.log(alldata);
+appendData(alldata);
+//   console.log(alldata);
 }
 
 
