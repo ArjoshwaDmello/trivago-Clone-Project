@@ -220,3 +220,12 @@ h3 {
     font-size: initial;
     font-weight: bold;
 }
+
+/* Left part */
+.left11{
+    line-height: 1px;
+}
+.stops{
+    display: flex;
+    justify-content: space-between;
+}

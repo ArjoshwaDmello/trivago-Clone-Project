@@ -63,9 +63,42 @@ function appendData(dataarr) {
         let Destination = document.createElement("p");
         Destination.innerText = ele.FlightDetails[0].Destination;
 
-        let ArrivalDateTime=document.createElement("h4");
+        let ArrivalDateTime=document.createElement("h4");//2:00//4:00=4:00-2:00=2:00
         ArrivalDateTime.innerText= ele.FlightDetails[0].ArrivalDateTime;
-       
+
+
+        // var arr1=input[1].trim().split(" ").map((e)=>e.split(':').join("")).map(Number);
+
+         let x=(ele.FlightDetails[0].ArrivalDateTime);
+          
+         let hourx=Number(x[0]+x[1]);
+         let minx=Number(x[3]+x[4]);
+         let hourx1=hourx*60+minx;
+        //  console.log(hourx1);
+
+         let y=(ele.FlightDetails[0].DepartureDateTime);
+
+         let houry=Number(y[0]+y[1]);
+         let miny=Number(y[3]+y[4]);
+         let houry1=houry*60+miny;
+        //  console.log(houry1);
+
+        let timeover=hourx1-houry1;
+        // console.log(timeover);
+        let ghanta=((timeover/60).toFixed(0)-1);
+        let ghantamin=(timeover%60);
+        // console.log((timeover/60).toFixed(0),(timeover%60));
+         let a= document.createElement("p");
+         if(ghanta>=1){
+            a.innerText=ghanta+" : "+ghantamin+" hr";
+            a.style.fontSize="15px";
+            a.style.fontWeight="bold";
+         }
+         else{
+            a.innerText=ghantamin+" Min";
+            a.style.fontSize="15px";
+            a.style.fontWeight="bold";
+         }
         let price = document.createElement("h3");
         price.innerText = "₹ " + ele.FareDescription.PaxFareDetails[0].BasicAmount;
         price.style.fontSize = "25px";
@@ -98,7 +131,7 @@ function appendData(dataarr) {
 
         div0.append(Airlinimg,AirlineName,Airlinimg1,AirlineName1);
         div1.append(OriginAirportCity,origin,DepartureDateTime);
-        div12.append(line1,linename);
+        div12.append(line1,linename,a);
         div2.append(DestinationAirportCity,Destination,ArrivalDateTime);
         div3.append(price, fairy, viewdeal);
         div.append(div0,div1,div12,div2, div3);
@@ -109,6 +142,10 @@ function appendData(dataarr) {
     });
 }
 load();
+
+function sortbyprice(){
+  console.log(10);
+}
 
 
 
