@@ -84,7 +84,7 @@
                     "PaxFareDetails": [
                       {
                         "PaxType": "",
-                        "BasicAmount": "8283",
+                        "BasicAmount": "8,283",
                         "TotalTaxAmount": "2737",
                         "FuelSurcharge": "0",
                         "Commission": "0",
@@ -198,7 +198,7 @@
                     "PaxFareDetails": [
                       {
                         "PaxType": "",
-                        "BasicAmount": "8283",
+                        "BasicAmount": "10,300",
                         "TotalTaxAmount": "2737",
                         "FuelSurcharge": "0",
                         "Commission": "0",
@@ -312,7 +312,7 @@
                     "PaxFareDetails": [
                       {
                         "PaxType": "",
-                        "BasicAmount": "8283",
+                        "BasicAmount": "7,540",
                         "TotalTaxAmount": "2737",
                         "FuelSurcharge": "0",
                         "Commission": "0",
@@ -485,7 +485,7 @@
                     "PaxFareDetails": [
                       {
                         "PaxType": "",
-                        "BasicAmount": "8616",
+                        "BasicAmount": "8,616",
                         "TotalTaxAmount": "2806",
                         "FuelSurcharge": "0",
                         "Commission": "0",
@@ -599,7 +599,7 @@
                     "PaxFareDetails": [
                       {
                         "PaxType": "",
-                        "BasicAmount": "8883",
+                        "BasicAmount": "8,883",
                         "TotalTaxAmount": "2767",
                         "FuelSurcharge": "0",
                         "Commission": "0",

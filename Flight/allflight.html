@@ -31,6 +31,7 @@
             align-items: center;
             justify-content: flex-start;
             gap: 44px;
+            position: relative;
         }
 
         input {
@@ -81,9 +82,9 @@
 
         #box1 {
             width: 164px;
-            top: 100%;
+            position: absolute;
             left: 0;
-            /* background-color: rgb(29, 22, 22); */
+            background: white;
             border-radius: 20px;
             padding: 20px;
             display: none;
@@ -105,6 +106,15 @@
             justify-content: space-around;
         }
 
+        .card {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 0px 20px grey;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
         #left {
             width: 251px;
         }
@@ -114,44 +124,146 @@
             justify-content: space-between;
             margin: auto;
         }
-   .logo{
-       width: 130px;
-      }
-     #card{
-         text-align: center;
-         width: 628px;
-         margin-top: 4%;
-         height: 185px;
-         box-shadow: 0px 0px 15px gray;
-         border-radius: 8px;
-     }
-     p{
-         margin-top: 10px;
-         font-size: 11px;
-     }
-     .parent{
-         width:100%;
-         margin: auto;
-         justify-content: space-between;
-     }
-     .heading{
-         display: flex;
-         justify-content: center;
-         margin: 40px 0;
-         font-size: 20px;
-         font-weight: 800;
-     }
-     #card1{
-        display: flex;
-     }
+
+        .logo {
+            width: 130px;
+        }
+
+        #card {
+            text-align: center;
+            width: 628px;
+            line-height: 75px;
+            margin-top: 4%;
+            height: 185px;
+            box-shadow: 0px 0px 15px gray;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 11px;
+        }
+
+        #parent {
+            margin-top: 5%;
+
+        }
+
+        #card1 {
+            text-align: center;
+            width: 628px;
+            line-height: 75px;
+            margin-top: 4%;
+            height: 185px;
+            box-shadow: 0px 0px 15px gray;
+            border-radius: 8px;
+        }
+
+        .transaction_parent {
+            display: flex;
+            background-color: white;
+            justify-content: end;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            /* left: 0; */
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .rupey {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        h3 {
+            font-size: initial;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body onclick="function1()">
+
     <div id="top">
         <h1>Welcome! Find a flexible flight for your next trip.</h1>
         <div>
-            <h2>₹</h2>
+            <div class="transaction_parent">
+                <div class="topnav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <h3>Most-Used Currencies</h3>
+                        <div class="rupey">
+                            <div>
+                                <p>₹ Indian Rupees </p>
+                                <p>$ United States Dollars </p>
+                            </div>
+                            <div>
+                                <p>€ Euro</p>
+                                <p> C$ Canadian Dollars </p>
+                            </div>
+                            <div>
+                                <p>₹ Indian Rupees </p>
+                                <p>$ United States Dollars </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">₹</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -243,64 +355,135 @@
 
         <div id="right">
             <div>
-                <button style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Cheapest<p>₹ 23,314</p></button>
-                <button style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Best<p>₹ 50,762</p></button>
-                <button style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Quickset<p>₹ 23,314</p></button>
-                <button style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">OtherSort<p>₹ 23,314</p></button>
-                <div class="parent">
-                <div id="card">
-                        <div>
-                    </div>
+                <button
+                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Cheapest
+                    <p>₹ 23,314</p>
+                </button>
+                <button
+                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Best
+                    <p>₹ 50,762</p>
+                </button>
+                <button
+                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Quickset
+                    <p>₹ 23,314</p>
+                </button>
+                <button
+                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">OtherSort
+                    <p>₹ 23,314</p>
+                </button>
+
+                <div id="parent">
+
                 </div>
+            </div>
         </div>
     </div>
-
-
-
-
-
 </body>
 
 </html>
 <script>
-
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "681px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
     // var data = JSON.parse(localStorage.getItem("surya"));
     // console.log(data.start1)
     // console.log(data.end1)
-       
-   //Main
+
+    //Main
     async function load() {
         let res = await fetch("http://localhost:3000/posts");
         let data = await res.json();
-         console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0].FlightDetails[0].OriginAirportName);
-         appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
+        console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0].FlightDetails[0].OriginAirportName);
+        appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
         // appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items)
     }
     function appendData(dataarr) {
         // console.log()
-         document.getElementById("card").innerText="";
-        let container = document.getElementById("card");
-        container.style.display="flex";
-        dataarr.forEach((ele,index) => {
+        let container = document.getElementById("parent");
+        container.textContent = "";
+        dataarr.forEach((ele, index) => {
             let div = document.createElement("div");
+            let div0=document.createElement("div");
             let div1 = document.createElement("div");
+            let div12= document.createElement("div");
             let div2 = document.createElement("div");
+            let div3 = document.createElement("div");
+            let filghtdetails = document.createElement("div");
             // let name = document.createElement("p");
             // name.innerText = ele.FlightDetails[0].OriginAirportName;
+
+            let AirlineName= document.createElement("h3");
+            AirlineName.innerText = ele.FlightDetails[0].AirlineName;
+
+            let Airlinimg=document.createElement("img");
+            Airlinimg.src="https://www.logo.wine/a/logo/IndiGo/IndiGo-Logo.wine.svg"
+            Airlinimg.style.width="50px";
+            Airlinimg.style.height="52px";
+
+
+            let Airlinimg1=document.createElement("img");
+            Airlinimg1.src="https://www.logo.wine/a/logo/IndiGo/IndiGo-Logo.wine.svg"
+            Airlinimg1.style.width="50px"; 
+            Airlinimg1.style.height="52px";
+
+            let AirlineName1= document.createElement("h3");
+            AirlineName1.innerText = ele.FlightDetails[0].AirlineName;
 
             let OriginAirportCity = document.createElement("h3");
             OriginAirportCity.innerText = ele.FlightDetails[0].OriginAirportCity;
 
+            let origin=document.createElement("p");
+            origin.innerText = ele.FlightDetails[0].Origin;
+
             let DestinationAirportCity = document.createElement("h3");
             DestinationAirportCity.innerText = ele.FlightDetails[0].DestinationAirportCity;
 
-            div1.append(OriginAirportCity);
-            div2.append(DestinationAirportCity);
-            div.append(div1,div2);
+            let Destination = document.createElement("p");
+            Destination.innerText = ele.FlightDetails[0].Destination;
+
+            let price = document.createElement("h3");
+            price.innerText = "₹ " + ele.FareDescription.PaxFareDetails[0].BasicAmount;
+            price.style.fontSize = "25px";
+            price.style.color="red";
+            let fairy = document.createElement("P");
+            fairy.textContent = "EasyMyTrip";
+            fairy.style.fontWeight = "bold";
+            fairy.style.fontSize = "15px";
+
+            let viewdeal = document.createElement("button");
+            viewdeal.textContent = "View Deal";
+            viewdeal.style.padding=" 9px 30px 11px";
+            viewdeal.style.backgroundColor= "red";
+            viewdeal.style.color= "white";
+            viewdeal.style.borderRadius= "7px";
+            viewdeal.style.fontWeight= "bold";
+            viewdeal.style.cursor="point"
+
+            let line1=document.createElement("span");
+            line1.innerHTML="&#8651";
+            line1.style.content="\21CB";
+            line1.style.fontSize="70px";
+
+            let linename=document.createElement("p");
+            linename.textContent="Direct";
+            linename.style.fontSize="20px"
+
+            div0.append(Airlinimg,AirlineName,Airlinimg1,AirlineName1);
+            div1.append(OriginAirportCity,origin);
+            div12.append(line1,linename);
+            div2.append(DestinationAirportCity,Destination);
+            div3.append(price, fairy, viewdeal);
+            div.append(div0,div1,div12,div2, div3);
+            div.setAttribute("class", "card");
+            div.style.display = "flex";
+            div.style.justifyContent = "space-between";
             container.append(div);
-          });
-        }
-        load();
+        });
+    }
+    load();
 
 
 
@@ -370,7 +553,7 @@
     const form2 = document.querySelector('#search-form1');
     const input2 = document.querySelector('#search-input1');
 
-    form2.addEventListener('submit', event => {
+    form2.addEventListener('ontype()', event => {
         event.preventDefault();
         let b = searchCity2(input2.value);
         //    console.log(b)
@@ -399,14 +582,20 @@
 
 
     function appendData2(dataarr) {
-        document.getElementById("box3").innerText = "";
-        let container = document.getElementById("box3");
+        document.getElementById("box1").innerText = "";
+        let container = document.getElementById("box1");
         dataarr.forEach((ele) => {
             let div = document.createElement("div");
             let OriginAirportCity1 = document.createElement("h3");
             OriginAirportCity1.innerText = ele.FlightDetails[0].OriginAirportCity;
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "checkbox");
             //   if(OriginAirportCity1==city){
-            div.append(OriginAirportCity1);
+            div.append(OriginAirportCity1, x);
+            div.style.display = "flex";
+            div.style.width = "136px";
+            div.style.justifyContent = "space-between";
+            div.style.gap = "45px";
             container.append(div);
         })
     }
@@ -416,7 +605,7 @@
 
     var id;
     function debounce() {
-         document.getElementById("box1").style.display = "block";
+        document.getElementById("box1").style.display = "block";
         if (id) {
             clearInterval(id);
         }
