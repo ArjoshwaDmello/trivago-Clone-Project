@@ -96,6 +96,79 @@
             color: sienna;
             margin-left: 27%;
         }
+        /* Side currency */
+        .transaction_parent {
+            display: flex;
+            background-color: white;
+            justify-content: end;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            /* left: 0; */
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .rupey {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        h3 {
+            font-size: initial;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -103,10 +176,33 @@
     <div id="top">
         <h1>Welcome! Find a flexible flight for your next trip.</h1>
         <div>
-            <h2>₹</h2>
+        <div class="transaction_parent">
+            <div class="topnav">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h3>Most-Used Currencies</h3>
+                    <div class="rupey">
+                        <div>
+                            <p>₹ Indian Rupees </p>
+                            <p>$ United States Dollars </p>
+                        </div>
+                        <div>
+                            <p>€ Euro</p>
+                            <p> C$ Canadian Dollars </p>
+                        </div>
+                        <div>
+                            <p>₹ Indian Rupees </p>
+                            <p>$ United States Dollars </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">₹</span>
+            </div>
         </div>
     </div>
-
+</div>
 
     <div id="Select">
         <div id="return">
@@ -202,6 +298,12 @@
 
 </html>
 <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "681px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
     // async function mrequest(){
     //     let res=await fetch("http://localhost:3000/posts");
     //     let data= await res.json();

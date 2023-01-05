@@ -237,7 +237,7 @@
 <body onclick="function1()">
 
     <div id="top">
-        <h1>Welcome! Find a flexible flight for your next trip.</h1>
+        <a href="sample.html">Home</a>
         <div>
             <div class="transaction_parent">
                 <div class="topnav">
@@ -437,6 +437,9 @@
 
             let origin=document.createElement("p");
             origin.innerText = ele.FlightDetails[0].Origin;
+           
+            let DepartureDateTime=document.createElement("h4");
+            DepartureDateTime.innerText = ele.FlightDetails[0].DepartureDateTime;
 
             let DestinationAirportCity = document.createElement("h3");
             DestinationAirportCity.innerText = ele.FlightDetails[0].DestinationAirportCity;
@@ -444,6 +447,9 @@
             let Destination = document.createElement("p");
             Destination.innerText = ele.FlightDetails[0].Destination;
 
+            let ArrivalDateTime=document.createElement("h4");
+            ArrivalDateTime.innerText= ele.FlightDetails[0].ArrivalDateTime;
+           
             let price = document.createElement("h3");
             price.innerText = "₹ " + ele.FareDescription.PaxFareDetails[0].BasicAmount;
             price.style.fontSize = "25px";
@@ -471,10 +477,13 @@
             linename.textContent="Direct";
             linename.style.fontSize="20px"
 
+            // let a=ArrivalDateTime.value-DepartureDateTime.value
+            // console.log(ArrivalDateTime-DepartureDateTime);
+
             div0.append(Airlinimg,AirlineName,Airlinimg1,AirlineName1);
-            div1.append(OriginAirportCity,origin);
+            div1.append(OriginAirportCity,origin,DepartureDateTime);
             div12.append(line1,linename);
-            div2.append(DestinationAirportCity,Destination);
+            div2.append(DestinationAirportCity,Destination,ArrivalDateTime);
             div3.append(price, fairy, viewdeal);
             div.append(div0,div1,div12,div2, div3);
             div.setAttribute("class", "card");
@@ -484,6 +493,8 @@
         });
     }
     load();
+
+
 
 
 
