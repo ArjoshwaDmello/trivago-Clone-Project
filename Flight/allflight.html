@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Header_Footer/headerFooter.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="allflight.css">
 </head>
 
 <body onclick="function1()">
+
+<div id="nav">
+
+</div>
 
     <div id="top">
         <a href="index.html">Home</a>
@@ -171,8 +176,16 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 
 </html>
-<script src="allflight.js">
+
+<script  src="allflight.js" >
+
+</script>
+<script type="module">
+import { header,footer } from "./Header_Footer/header_footer.js";
+document.getElementById("nav").innerHTML=header();
+document.getElementById("footer").innerHTML=footer();
 </script>

@@ -70,9 +70,9 @@ h2 {
 
 #box1 {
     width: 164px;
-    top: 100%;
+    position: absolute;
     left: 0;
-    /* background-color: rgb(29, 22, 22); */
+    background: white;
     border-radius: 20px;
     padding: 20px;
     display: none;
@@ -157,4 +157,7 @@ h2 {
 h3 {
     font-size: initial;
     font-weight: bold;
+}
+#footer{
+    margin-top: 20%;
 }
