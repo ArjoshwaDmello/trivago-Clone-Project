@@ -4,49 +4,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-// async function mrequest(){
-//     let res=await fetch("http://localhost:3000/posts");
-//     let data= await res.json();
-//     console.log(data);
-// }
-// mrequest();
-//Main
-// let arrray=async function load() {
-//     let res = await fetch("http://localhost:3000/posts");
-//     let data = await res.json();
-//     console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0].FlightDetails[0].OriginAirportName);
-//     // appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
-//     appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items)
-// }
-// function appendData(dataarr) {
-//     // console.log()
-//     document.getElementById("box3").innerText = "";
-//     let container = document.getElementById("box3");
-//     dataarr.forEach((ele) => {
-//         let name = document.createElement("h3");
-
-//         // console.log(ele.FlightDetails[0].OriginAirportCity);
-//         name.innerText = ele.FlightDetails[0].OriginAirportName;
-
-//         let OriginAirportCity = document.createElement("h3");
-//         OriginAirportCity.innerText = ele.FlightDetails[0].OriginAirportCity;
-
-//         let DestinationAirportCity = document.createElement("h3");
-//         DestinationAirportCity.innerText = ele.FlightDetails[0].DestinationAirportCity;
-       
-//         // div.addEventListener("click", function () {
-//         //     localStorage.setItem("details", "http://localhost:3000/posts")
-//         //     window.location.href = "allflight.html"
-//         // })
-
-//         div.append(name, OriginAirportCity, DestinationAirportCity);
-//         container.append(div);
-//       });
-//     }
-
-        
-
-
 // Search city
 // Example usage: search for the city "Seattle"
 // searchCity(city)bOX 1;
@@ -59,7 +16,7 @@ form1.addEventListener('ontype()', event=> {
 });
 
 function searchCity1(city) {
-    const endpoint = 'http://localhost:3000/posts';
+    const endpoint = 'https://vast-gold-panda-sari.cyclic.app/posts';
     const params = {
         city: city,
     };
@@ -119,7 +76,7 @@ form2.addEventListener('submit', event => {
 });
 
 function searchCity2(city) {
-    const endpoint = 'http://localhost:3000/posts';
+    const endpoint = 'https://vast-gold-panda-sari.cyclic.app/posts';
     const params = {
         city: city,
     };
