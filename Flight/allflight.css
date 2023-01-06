@@ -70,11 +70,11 @@ h2 {
 }
 
 #box1 {
-    width: 164px;
+    width: 172px;
     position: absolute;
     left: 0;
     background: white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding: 20px;
     display: none;
     overflow-y: scroll;
@@ -84,7 +84,7 @@ h2 {
     font-size: revert;
     font-weight: bold;
     color: sienna;
-    margin-left: 27%;
+    margin-left: 25%;
 }
 
 #main {
