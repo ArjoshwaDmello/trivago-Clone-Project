@@ -1,0 +1,59 @@
+#down{
+    display: flex;
+    justify-content: space-around;
+}
+#three{
+    width: 800px;
+
+    /* gap: 10px; */
+    display: flex;
+    justify-content: space-between;
+   padding: 20px;
+   /* margin: 50px; */
+   padding-left: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#three1 img{
+   
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#three2{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* border: solid black; */
+}
+#three3{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* border: solid green;
+    */
+}
+#three311{
+   
+  
+    display: flex;
+    justify-content: space-between; 
+    height: 40px;
+    border: solid red;
+}
+#three311 button{
+    background-color: rgb(84, 177, 84);
+    border-radius: 10px;
+width:110px
+
+}
+#ruby{
+    background-color: rgb(219, 231, 231);
+}
+/* #heart{
+    background-color: brown;
+} */
+#map{
+    position: fixed;
+    right: 0;
+}
+#container{
+   margin-left: -43%;
+}
