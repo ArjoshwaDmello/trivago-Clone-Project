@@ -220,6 +220,7 @@ const form1 = document.querySelector('#search-form');
 const input1 = document.querySelector('#search-input');
 form1.addEventListener('ontype()', event => {
     event.preventDefault();
+    // console.log(input1.value);
      searchCity1(input1.value);
 });
 
@@ -228,7 +229,7 @@ function searchCity1(city) {
     const params = {
         city: city,
     };
-
+    
     const queryString = new URLSearchParams(params).toString();
     const url = `${endpoint}?${queryString}`;
 
@@ -236,6 +237,8 @@ function searchCity1(city) {
         .then(response => response.json())
         .then(data => {
             // Do something with the search results
+           
+            // console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
             appendData1(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
         })
         .catch(error => {
