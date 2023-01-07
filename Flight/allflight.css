@@ -13,13 +13,16 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     gap: 68px;
+    margin-left: 3%;
 }
 
 #maininputbox {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 44px;
+    gap: 10px;
+    margin-left: 3%;
+    margin-top: 1%;
     position: relative;
 }
 
@@ -89,7 +92,7 @@ h2 {
 
 #main {
     display: flex;
-    width: 1000px;
+    width: 1110px;
     margin: 15px;
     /* gap: 44px; */
     justify-content: space-around;
@@ -106,6 +109,7 @@ h2 {
 
 #left {
     width: 251px;
+    margin-left: 2%;
 }
 
 #right {
@@ -230,4 +234,26 @@ h3 {
     align-items: unset;
     gap: 42px;
 }
-    
+#airport,#airport1,#airport2,#airport3{
+    width: 244px;
+    height: 36px;
+    font-size: 18px
+}    
+.flight1
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+.flight2{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+#payementwork{
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+/* Dropdown */

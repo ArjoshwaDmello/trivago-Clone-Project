@@ -57,8 +57,8 @@
                                 <P> ฿ Thai Baht</P>
                                 <p>₹ Indian Rupees </p>
                                 <p>$ United States Dollars </p>
-                                <P>  CHF Swiss Francs</P>
-                               <P> £ Syrian Pounds</P>
+                                <P> CHF Swiss Francs</P>
+                                <P> £ Syrian Pounds</P>
                             </div>
                             <div>
                                 <P> $ Azerbaijani New Manat</P>
@@ -73,22 +73,22 @@
                                 <P>Botswanan Pula</P>
                                 <p> C$ Canadian Dollars </p>
                                 <P> SMT ajikistani Somoni</P>
-                               
-                               
+
+
                             </div>
-                            <div> 
+                            <div>
                                 <P>din Saudi Arabian Riyals</P>
                                 <P> ₨ Seychelles Rupees</P>
-                               <P> S$ Singapore Dollars</P>
-                               <P> $ Solomon Islands Dollars</P>
+                                <P> S$ Singapore Dollars</P>
+                                <P> $ Solomon Islands Dollars</P>
                                 <P>R South African Rand</P>
                                 <P>₩ South Korean Won</P>
                                 <P>Rs Sri Lankan Rupees</P>
-                               <P> SDP Sudanese Pound</P>
-                               <P> $ Suriname Dollars</P>
+                                <P> SDP Sudanese Pound</P>
+                                <P> $ Suriname Dollars</P>
                                 <P>SZL Swaziland Lilangeni</P>
-                               <P> kr Swedish Kronor</P>
-                               <P> TSh Tanzanian Shilling</P>
+                                <P> kr Swedish Kronor</P>
+                                <P> TSh Tanzanian Shilling</P>
                             </div>
                             <!--  -->
                         </div>
@@ -184,21 +184,34 @@
     <div id="main">
         <div id="left">
             <div class="left11">
-                <h5>Our Advice <span class="material-symbols-outlined"> trending_up </span></h5>
+                <div class="flight1">
+                    <h5>Our Advice</h5>
+                    <span class="material-symbols-outlined"
+                        style="font-size: 39px;box-shadow: 1px 1px 7px grey;color: red;">
+                        trending_up </span>
+                </div>
                 <h4>Buy Now</h4>
-                <h6>Prices are unlikely to improve before you travel</h6>
+                <h6 style="color: grey;font-family: system-ui;"><span class="material-symbols-outlined"
+                        style="font-size: 12px;">
+                        info
+                    </span>Prices are unlikely to improve before you travel</h6>
+                <h5> 809 of 809 flights </h5>
             </div>
-            <br>
-            <p> 809 of 809 flights </p>
             <h5>Stops</h5>
             <div class="stops">
                 <div class="checkbox2">
-                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox"
-                            style="width: 22px;"> Direct</h4>
-                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox"
-                            style="width: 22px;"> 1 Stop</h4>
-                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox"
-                            style="width: 22px;"> 2+Stops</h4>
+                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox" style="width: 22px;"
+                            checked> Direct <span class="material-symbols-outlined">
+                            flight_takeoff
+                        </span></h4>
+                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox" style="width: 22px;"
+                            checked>1Stop<span class="material-symbols-outlined">
+                            connecting_airports
+                        </span></h4>
+                    <h4 style="display: flex;align-items: center;gap: 11px;"><input type="checkbox" style="width: 22px;"
+                            checked>2+Stops<span class="material-symbols-outlined">
+                            flight_land
+                        </span></h4>
                 </div>
                 <div style="line-height: 45px;">
                     <h5>₹ 8,950</h5>
@@ -206,24 +219,71 @@
                     <h5>₹ 3,985</h5>
                 </div>
             </div>
+            <select name="airports" id="airport" aria-placeholder="Airports">
+                <option value="">Airports</option>
+                <option value="Mumbai">Mumbai-Chhatrapati....</option>
+                <option value="dubai">Dubai International Airport</option>
+                <option value="newyrok">New York-John F.Kennedy...</option>
+                <option value="newyrok">Austria-Vienna Interna...</option>
+                <option value="newyrok">Saudi Arabia-The King Abdulaziz...</option>
+                <option value="newyrok">Singapore-Changi Airport...</option>
+            </select>
+            <div class="flight2">
+                <h4>Fare assistant</h4>
+                <span class="material-symbols-outlined"> info </span>
+            </div>
+            <div id="payementwork">
+               <span class="material-symbols-outlined" style="font-size: 31px;"> credit_card</span>
+                <h4>Payment Method</h4>
+            </div>
+            <select name="name" id="airport1">
+                <option value="1">Choose Payment Method</option>
+                <option value="1">UPI</option>
+                <option value="1">American Express</option>
+                <option value="1">Mobile Wallet</option>
+                <option value="1">Net Banking</option>
+                <option value="1">RuPay</option>
+                <option value="1">Visa Credit</option>
+            </select>
+            <p style="border-bottom: outset;"></p>
+            <select name="name" id="airport2">
+                <option value="1">Airlines</option>
+                <option value="1">AirAsia India only ₹ 5,195</option>
+                <option value="1">Air India only ₹ 6,357</option>
+                <option value="1">Akasa Air only ₹ 4,634</option>
+                <option value="1">FlexFlight only ₹ 11,671</option>
+                <option value="1">SpiceJet only ₹ 47,775</option>
+                <option value="1">Vistara only ₹ 7,566</option>
+            </select>
+            <p style="border-bottom: outset;"></p>
+            <select name="name" id="airport3">
+                <option value="1">Choose Payment Method</option>
+                <option value="1">UPI</option>
+                <option value="1">American Express</option>
+                <option value="1">Mobile Wallet</option>
+                <option value="1">Net Banking</option>
+                <option value="1">RuPay</option>
+                <option value="1">Visa Credit</option>
+            </select>
+            <input type="value" min="0" max="100">
         </div>
 
         <div id="right">
             <div>
                 <button id="sortbyprice1btn"
-                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Cheapest
-                    <p>₹ 3,985</p>
+                    style="width: 165px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Cheapest
+                    <p> ₹ 3,985</p>
                 </button>
                 <button
-                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Best
+                    style="width: 165px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Best
                     <p>₹ 50,762</p>
                 </button>
                 <button id="sortbyprice2btn"
-                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Quickset
+                    style="width: 165px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">Quickset
                     <p>₹ 58,180</p>
                 </button>
                 <button
-                    style="width: 154px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">OtherSort
+                    style="width: 165px;height: 61px;line-height: 5px;box-shadow: 0px 0px 15px grey;font-weight: bold;">OtherSort
                     <p>₹ 23,314</p>
                 </button>
                 <div id="parent">

@@ -70,6 +70,11 @@ function appendData(dataarr) {
 
         let ArrivalDateTime = document.createElement("h4");
         ArrivalDateTime.innerText = ele.FlightDetails[0].ArrivalDateTime;
+        
+        let journey=document.createElement("p");
+        journey.innerText="Journey Time";
+        journey.style.fontSize="12px";
+        
 
         let x = (ele.FlightDetails[0].ArrivalDateTime);
 
@@ -92,12 +97,12 @@ function appendData(dataarr) {
         // console.log((timeover/60).toFixed(0),(timeover%60));
         let a = document.createElement("p");
         if (ghanta >= 1) {
-            a.innerText = ghanta + " : " + ghantamin + " hr";
+            a.innerText = ghanta +" H"+ " : " + ghantamin + " M";
             a.style.fontSize = "15px";
             a.style.fontWeight = "bold";
         }
         else {
-            a.innerText = ghantamin + " Min";
+            a.innerText = ghantamin + " M";
             a.style.fontSize = "15px";
             a.style.fontWeight = "bold";
         }
@@ -124,6 +129,12 @@ function appendData(dataarr) {
         line1.style.content = "\21CB";
         line1.style.fontSize = "70px";
 
+        let jorneyicon = document.createElement("span");
+        jorneyicon.innerHTML = "&#8621";
+        jorneyicon.style.content = "\21AD";
+        jorneyicon.style.fontSize = "56px";
+        jorneyicon.style.color="violet";
+        
         let linename = document.createElement("p");
         linename.textContent = "Direct";
         linename.style.fontSize = "20px"
@@ -156,7 +167,7 @@ function appendData(dataarr) {
 
         div0.append(Airlinimg, AirlineName, Airlinimg1, AirlineName1);
         div1.append(OriginAirportCity, origin, DepartureDateTime);
-        div12.append(line1, linename, a);
+        div12.append(line1, linename,jorneyicon,journey,a);
         div2.append(DestinationAirportCity, Destination, ArrivalDateTime);
         div3.append(price, fairy, viewdeal);
         div4.append(selectList);
