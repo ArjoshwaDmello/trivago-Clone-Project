@@ -1,81 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Adding image to dropdown list</title>
-    <style>
-        .dropbtn {
-            /* background-color: #4CAF50; */
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            transform: scale(1.1);
-        }
-    </style>
-</head>
-
-<body>
-    <center>
-        <h1 style="color: green">
-            GeeksforGeeks
-        </h1>
-
-        <div class="dropdown">
-            <button class="dropbtn">
-                Country Flags
-            </button>
-
-            <div class="dropdown-content">
-                <a href="#">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132503/iflag.jpg" width="20"
-                        height="15"> India</a>
-
-                <a href="#">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132504/uflag.jpg" width="20"
-                        height="15"> USA</a>
-                <a href="#">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132502/eflag.jpg" width="20"
-                        height="15"> England</a>
-                <a href="#">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132500/bflag.jpg" width="20"
-                        height="15"> Brazil</a>
-            </div>
+<div class="upper_top">
+    <div class="heading">Filter based on Cars</div>
+    <div class="cartypes">
+        <div>
+            <img src="https://www.motorparks.co.uk/feeds/do-cap-image.aspx?capid=43390" alt="">
+            <h4>small</h4>
         </div>
-    </center>
-</body>
-
-</html>
+        <div>
+            <img src="https://d11unpj7eou730.cloudfront.net/thumbs/p-nc-p-s400-ver4/images/cars/generic/Maruti-Suzuki-Swift-DZire-Top-Medium-Sized-Family-Car.jpg"
+                alt="">
+            <h4>Medium</h4>
+        </div>
+        <div>
+            <img src="https://imgd.aeplcdn.com/600x337/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?q=75"
+                alt="">
+            <h4>Large</h4>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2017/08/26/18/22/car-2683858_960_720.jpg" alt="">
+            <h4>SUV</h4>
+        </div>
+    </div>
+</div>
+<div class="upper_top">
+    <div class="heading">Filter Options</div>
+    <div class="cartypes">
+        <div>
+            <select name="" id="Supplier">
+                <option value="">Supplier</option>
+                <option value="">Europcar</option>
+                <option value="">SS Travels</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="Policies">
+                <option value="">Policies</option>
+                <option value="">Free Cancellation</option>
+                <option value="">Fair Fuel Policy</option>
+                <option value="">Unlimited Milage</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="cepacity">
+                <option value="">Cepacity</option>
+                <option value="">passenger 3 to 5</option>
+                <option value="">6 or more</option>
+            </select>
+        </div>
+    </div>
+</div>

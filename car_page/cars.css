@@ -28,7 +28,8 @@
 #input_from input{
     margin: 5px 0px;
     padding: 7px;
-    width: 26%;
+    width: 20%;
+    /* width: 26%; */
     margin: auto;
     border-width: thin;
     border: 2px solid rgb(131, 131, 20);
@@ -62,7 +63,7 @@
 }
 
 #upper{
-    display: flex;
+    display: flex; 
     margin-top: 20px;
     justify-content: space-around;
     width: 100%;
@@ -72,6 +73,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    align-items: center;
     /* border: 2px solid yellow; */
 }
 .cartypes{
@@ -81,7 +83,7 @@
 }
 
 .cartypes > div{
-    width: 21%;
+    width: 20%;
     margin: auto;
     text-align: center;
     display: flex;
@@ -105,10 +107,134 @@
     text-align: justify;
 }
 
-#Supplier,#Policies{
-    padding: 10px;
-    margin: 25px 0px;
+#Supplier,#Policies,#cepacity,#more{
+    padding: 9px 10px;
+    margin: 5px 10px;
+    width: 200px;
 }
+
+/* js section */
+
+        #box {
+            display: flex;
+            
+            margin: auto;
+            margin: 10px 0px;
+            box-shadow: 0 3px 6px rgb(25 32 36 / 16%), 0 -1px 4px rgb(25 32 36 / 4%);
+            color: #192024;
+            border-radius: 8px;
+        }
+    
+        #box:hover {
+            transition: border-color .4s ease;
+            border: 1px solid transparent;
+        }
+    
+        #box>div {
+            /* border: 2px solid; */
+            width: 30%;
+        }
+    
+        /* first box */
+    
+        #car {
+            width: 100%;
+        }
+    
+        #logo {
+            width: 30%;
+        }
+    
+        /* second box */
+    
+        #info {
+            padding: 20px;
+            border-right: 1px solid rgb(186, 170, 172);
+        }
+    
+        #top {
+            border-bottom: 1px solid rgb(186, 170, 172);
+        }
+    
+        #about>p {
+            margin-top: -13px;
+    
+        }
+    
+        #icons {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px;
+    
+    
+        }
+    
+        #icons>i>span {
+            margin-left: 7px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+        }
+    
+        #end {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+    
+        #end>div {
+            width: 48%;
+            margin: auto;
+            text-align: left;
+        }
+    
+        #end>div>i>span {
+            margin-left: 10px;
+            font-size: 11px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+        /* last */
+        #price {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #price>div {
+            margin-top: 30%;
+        }
+    
+        #price button {
+            padding: 10px 20px;
+            background-color: rgb(33, 177, 33);
+            color: white;
+            border: none;
+        }
+    
+        #price button:hover {
+            cursor: pointer;
+            transition: border-color .4s ease;
+            border: 1px solid transparent;
+    
+        }
+    
+        /* media */
+    
+        @media only screen and (min-width: 540px) and (max-width: 720px) {
+    
+            #icons>i {
+                width: 18%;
+                padding: 0px 3px;
+                margin: auto;
+            }
+        }
+
+        #main{
+            display: flex;
+            gap: 5px;
+        }
 
 /* Responsiveness */
 @media only screen and (min-width: 0px) and (max-width: 765px){

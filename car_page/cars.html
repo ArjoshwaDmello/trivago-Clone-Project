@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="cars.css">
     <script src="https://kit.fontawesome.com/72335aff3f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="car_root">
-<!-- --drop down section -->
+        <!-- --drop down section -->
         <div id="drop_section">
             <div id="drop_selection">
                 <select name="" id="drop">
@@ -30,74 +32,35 @@
         <!-- input section -->
 
         <div id="input_from">
-           <input type="text" id="from" placeholder="Enter a Pickup Place">
-           <input  type="datetime-local" id="start-time" placeholder="Enter a Start Date">
-           <input type="datetime-local" id="end-time" placeholder="Enter a End Date">
-           <div id="search">
-            <i class=" fa-solid fa-magnifying-glass"></i>
-           </div>
+            <input type="text" id="from" placeholder="Enter a Pickup Place">
+            <input type="text" id="to" placeholder="Enter a drop Place">
+            <input type="datetime-local" id="start-time" placeholder="Enter a Start Date">
+            <input type="datetime-local" id="end-time" placeholder="Enter a End Date">
+            <div id="search">
+                <i class=" fa-solid fa-magnifying-glass"></i>
+            </div>
 
         </div>
 
 
-<!--  Data showing section -->
-
-        <div id="showdata">
+        <!--  Filter section -->
 
             <div id="upper">
-                <div class="upper_top">
-                    <div class="heading" >Cars</div>
-                    <div class="cartypes">
-                        <div>
-                            <img src="https://www.motorparks.co.uk/feeds/do-cap-image.aspx?capid=43390" alt="">
-                            <h4>small</h4>
-                        </div>
-                        <div>
-                            <img src="https://d11unpj7eou730.cloudfront.net/thumbs/p-nc-p-s400-ver4/images/cars/generic/Maruti-Suzuki-Swift-DZire-Top-Medium-Sized-Family-Car.jpg" alt="">
-                            <h4>Medium</h4>
-                        </div>
-                        <div>
-                            <img src="https://imgd.aeplcdn.com/600x337/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?q=75" alt="">
-                            <h4>Large</h4>
-                        </div>
-                        <div>
-                            <img src="https://cdn.pixabay.com/photo/2017/08/26/18/22/car-2683858_960_720.jpg" alt="">
-                            <h4>SUV</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="upper_top">
-                    <div class="heading">Filter Options</div>
-                    <div class="cartypes">
-                        <div>
-                            <select name="" id="Supplier">
-                                <option value="">Supplier</option>
-                                <option value="">Europcar</option>
-                                <option value="">SS Travels</option>
-                            </select>
-                        </div>
-                        <div>
-                            <select name="" id="Policies">
-                            <option value="">Policies</option>
-                            <option value="">Free Cancellation</option>
-                            <option value="">Fair Fuel Policy</option>
-                            <option value="">Unlimited Milage</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            
+
+        <!-- Populating data -->
+        <div id="main">
+        <div id="showdata">
+        
         </div>
+        <div id="map">
+        </div>
+        </div>
+
     </div>
 </body>
+
 </html>
 
-<script>
-
-//     let Init = ()=>{
-
-//     }
-
-// Init();
-</script>
+<script src="cars.js" type="module"></script>
