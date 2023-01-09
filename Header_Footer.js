@@ -7,7 +7,7 @@ function header(){
       <div>
         <nav id="navOne">
             <ul>
-              <li><a href="#"><span><i class="fa-solid fa-bed"></i></span><span>Stays</span></a></li>
+              <li><a href="index.html"><span><i class="fa-solid fa-bed"></i></span><span>Stays</span></a></li>
               <li><a href="cars.html"><span><i class="fa-solid fa-car"></i></span><span>Cars</span></a></li>
               <li><a href="Flightindex.html"><span><i class="fa-solid fa-plane"></i></span><span>Flights</span></a></li>
               <li><a href="#"><span><i class="fa-solid fa-suitcase"></i></span><span>Packages</span></a></li>
@@ -17,7 +17,7 @@ function header(){
       <div>
         <nav id="navTwo">
             <ul>
-                <li><a href="#"><span><i class="fa-regular fa-heart"></i></span><span>My Favourites</span></a></li>
+                <li><a href="Fav.html"><span><i class="fa-regular fa-heart"></i></span><span>My Favourites</span></a></li>
                 <li><a href="Login.html"><span>Log in</span><span></span></a></li>
                 <li><a href="#"><span>Menu</span><span></span></a></li>
                 <select>
