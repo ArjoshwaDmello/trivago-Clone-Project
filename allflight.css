@@ -50,8 +50,9 @@ input {
 }
 
 #Search {
-    background-color: red;
+    background-color: #428500;
     color: white;
+    border: none;
 }
 
 h2 {

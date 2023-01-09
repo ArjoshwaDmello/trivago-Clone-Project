@@ -8,7 +8,7 @@ function header(){
         <nav id="navOne">
             <ul>
               <li><a href="#"><span><i class="fa-solid fa-bed"></i></span><span>Stays</span></a></li>
-              <li><a href="#"><span><i class="fa-solid fa-car"></i></span><span>Cars</span></a></li>
+              <li><a href="cars.html"><span><i class="fa-solid fa-car"></i></span><span>Cars</span></a></li>
               <li><a href="Flightindex.html"><span><i class="fa-solid fa-plane"></i></span><span>Flights</span></a></li>
               <li><a href="#"><span><i class="fa-solid fa-suitcase"></i></span><span>Packages</span></a></li>
             </ul>

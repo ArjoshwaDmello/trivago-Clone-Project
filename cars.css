@@ -1,6 +1,4 @@
-*{
-        background-color: #fff;
-}
+
 #car_root{
     width: 80%;
     margin: auto;
@@ -249,4 +247,7 @@
         width: 50%;
         margin: 10px;
     }
+}
+#footer{
+    margin-top: 30%;
 }
