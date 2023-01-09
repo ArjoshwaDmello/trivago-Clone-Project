@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Page</title>
+    <link rel="stylesheet" href="cars.css">
+    <script src="https://kit.fontawesome.com/72335aff3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="car_root">
+        <!-- --drop down section -->
+        <div id="drop_section">
+            <div id="drop_selection">
+                <select name="" id="drop">
+                    <option value="">Diffrent drop-off</option>
+                    <option value="">Same drop-off</option>
+                    <option value="">Diffrent drop-off</option>
+                </select>
+            </div>
+            <div id="age_selection">
+                <select name="" id="age">
+                    <option value="">Driver's age : <span class="bold">26-65</span>
+                    <option value="">Driver' age less than <span class="bold">18</span></option>
+                </select>
+            </div>
+        </div>
+
+        <!-- input section -->
+
+        <div id="input_from">
+            <input type="text" id="from" placeholder="Enter a Pickup Place">
+            <input type="text" id="to" placeholder="Enter a drop Place">
+            <input type="datetime-local" id="start-time" placeholder="Enter a Start Date">
+            <input type="datetime-local" id="end-time" placeholder="Enter a End Date">
+            <div id="search">
+                <i class=" fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </div>
+
+
+        <!--  Filter section -->
+
+            <div id="upper">
+
+            </div>
+
+        <!-- Populating data -->
+        <div id="main">
+        <div id="showdata">
+        
+        </div>
+        <div id="map">
+        </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="cars.js" type="module"></script>
