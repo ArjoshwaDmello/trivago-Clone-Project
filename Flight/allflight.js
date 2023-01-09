@@ -154,7 +154,7 @@ function appendData(dataarr) {
             selectList.appendChild(option);
         }
         
-        selectList.style.width="610px";
+        selectList.style.width="660px";
         selectList.style.fontSize="15px";
         selectList.style.textAlign="center";
         selectList.style.border="thick";
