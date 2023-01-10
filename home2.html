@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAMAAAAua3VzAAAAk1BMVEX///8Af6/JSjj0jwD0igD4t3H++vrIRzTPY1UAe63s9Pj68O9Xmb7IRDD86dn0jx/5xJTTc2jhp6GVvNTIPyn0+PvK4OsigbDB2ufb6/Ll8PY8ibX98OT0ixKawdcAcqg+kLn72LXlsqzqwbz25OHNXE7XfnTv0M3FMRTLUkHFNhzRaVzbjYQkibU/l71vqsmx0eDwAfsrAAABt0lEQVR4nO3c2W7CMBBAUeMCAULaAmFJCmFpWAul//91RUitKmRgnrBHvfc5lo+MB/FCjCEiIiIiIpLVktb3iGxLGzgWj5+FjR2L64uus8V7efloU9rIsU9t8iJqUnMhl6mrJE3sdrWu/320Is2JrD6JqjqRjcheKUo320UcOPLsbCyCR56Yu9XPYYaLtDb9KMNH2rQRh4+0SScOH2nTrgKk3ZQKkOlKATLaluEjbdLVgDwNuNQ4dP0KegQysmX4SLtZK0DuugqQ6V4BMuooQNqlBuRWA9KCBAkSJEiQIEGCBAkSJMhgkRlIkCBBggQJEiRIkCBBgnwsMleAfAMJEiRIkCBB/iJbIEGCBAnyJtL1RzaQIEGCBAkSJEiQIEH+J+RQA/KgAfmpAXlsKkAWUwXIkQZkJjP6RfbbskvpFWl6GpCZ7OvcL9LIPm/PyFw0356RppAc5cwzUjTgvk/S9Gf3ld6RJruv9I80+fHe9Pi+k+eKWfPmaQaBNHlxmN5ghoE8zc/gOBxWrrz77cqdFHbl5W+JrMuV2VfRc1Y4tjHzV2FzF3LfEeba+lHF0nwiiYiIiIhIVd/GvLhS4+AC/gAAAABJRU5ErkJggg==">
+    <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="headerFooter.css">
     <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
     <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
 
@@ -21,8 +24,13 @@
 
     <link rel="stylesheet" href="home2.css" />
 </head>
-<body onload="inputSearch(locaData)">
-    <div id="up">
+<body onload="funto()">
+
+    <div id="nav">
+        
+    </div>
+    <div id="up" >
+        
 
          <!-- <input  id="search" type="text">
         <button >BTN</button> -->
@@ -48,7 +56,7 @@
     
               <button id="but" >Search</button>
             </div>
-          </div>
+          </div> 
 
         <div id="up2">
             <div id="priceNight">
@@ -104,6 +112,7 @@
             </div></div>
         </div>   
     </div>
+   <div id="footer"></div>
     
 </body>
 </html>
@@ -113,3 +122,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 crossorigin="anonymous"></script>
+<script type="module">
+    import { header,footer } from "./header_footer.js";
+    document.getElementById("nav").innerHTML=header();
+    document.getElementById("footer").innerHTML=footer();
+    </script>

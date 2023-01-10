@@ -1,5 +1,6 @@
 var locaData = JSON.parse(localStorage.getItem("trivago")) || [];
-let search = document.getElementById("search").searchData;
+let searchData= localStorage.getItem("data");
+let search = searchData;
 
 
 //  ghjk
@@ -492,6 +493,7 @@ let alldata;
 let funto = () => {
   localStorage.setItem("trivago", JSON.stringify(items));
   // console.log(items)
+  inputSearch(locaData);
 };
 
 // //code to append
@@ -534,7 +536,12 @@ function displayData(data, cityName) {
     rating.textContent = ele.number;
     let heart = document.createElement("div");
     heart.innerHTML =  `<i class="bi bi-heart"></i>`;
-   
+   heart.setAttribute("id","heartid")
+
+  //  document.getElementById("heartid").addEventListener("click",function(){
+    // localStorage.setItem("fav",JSON.stringify(arr));
+    // location.href="heart.html"
+  //  })
 
     let good = document.createElement("h4");
     good.textContent = ele.good_excellent;
@@ -555,14 +562,14 @@ function displayData(data, cityName) {
     let div311 = document.createElement("div");
     div311.setAttribute("id", "three311");
     let price = document.createElement("h2");
-    price.textContent = ele.price;
+    price.textContent ="₹"+ ele.price;
 
     let viewDeal = document.createElement("button");
     viewDeal.textContent = "View Deal";
 
     let div32 = document.createElement("div");
     let ourLowestPrice = document.createElement("p");
-    ourLowestPrice.textContent = "Our Lowest Price"+  ele.price;
+    ourLowestPrice.textContent = "Our Lowest Price:"+"  ₹"+ele.price
 
     // let div321 = document.createElement("div");
     // div321.setAttribute("id", "three321");
@@ -624,9 +631,9 @@ function map(cityName) {
 //inputSearch(locaData,search);
 let data1;
 
-  let searchData= localStorage.getItem("data");
+  
   console.log(searchData);
-
+// inputSearch(locaData);
 function inputSearch(locaData) {
   search =searchData;
   // search=localStorage.getItem("data");
@@ -663,15 +670,15 @@ function sortbyprice1(alldata) {
 }
 
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("up");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("up");
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
