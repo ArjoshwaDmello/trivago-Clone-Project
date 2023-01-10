@@ -1,6 +1,6 @@
 # trivago-Clone-Project
 
-Deployment Link:https://lighthearted-jelly-d6fd0a.netlify.app/index.html
+Deployment Link: https://trivago-clone0.netlify.app/
 
 Unit-5 Construct Week project(HTML,CSS,JAVASCRIPT,NODE.JS)-Masai School
 
