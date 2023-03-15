@@ -6,9 +6,7 @@ Unit-5 Construct Week project(HTML,CSS,JAVASCRIPT,NODE.JS)-Masai School
 
 TrivagoClone:
 
-trivago is a hotel search with an extensive price comparison.
-The prices shown come from numerous hotels and booking websites.
-This means that while users decide on trivago which hotel best suits their needs, the booking process itself is completed through the booking sites
+Trivago is a hotel search with an extensive price comparison.The prices shown come from numerous hotels and booking websites.This means that while users decide on trivago which hotel best suits their needs, the booking process itself is completed through the booking sites
 
 Team Size: 06
 
